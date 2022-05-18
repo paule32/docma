@@ -1,0 +1,45 @@
+%{
+(* ------------------------------------------------------- *)
+(* File: parser.y                                          *)
+(*                                                         *)
+(* Autor: Jens Kallup <kallup.jens@gmail.com>              *)
+(* Copy : (c) 2022 by Jens Kallup                          *)
+(*                                                         *)
+(* only for private use !                                  *)
+(* ------------------------------------------------------- *)
+unit parser;
+
+interface
+uses
+  SysUtils, yacclib, lexlib;
+
+  procedure yyerror(s: string);
+  procedure startParse;
+
+implementation
+
+procedure yyerror(s: string);
+begin
+  ShowMessage(Format('Error: %s', [s]));
+end;
+
+%}
+
+%start program
+
+%%
+
+program
+    : /* empty */
+    ;
+
+%%
+
+{$include lexer.pas}
+
+procedure startParse;
+begin
+  yyparse;
+end;
+
+end.
