@@ -1,0 +1,24 @@
+library wincom;
+
+uses
+  Forms,
+  idewindow in '..\..\idewindow.pas' {Form1},
+  utils in '..\..\utils.pas',
+  msgbox in '..\..\msgbox.pas' {MsgBoxDlg},
+  inputbox in '..\..\inputbox.pas' {inputdlg},
+  scanner in '..\..\scanner.pas',
+  parser in '..\..\parser.pas',
+  x86code in '..\..\x86code.pas',
+  errors in '..\..\errors.pas',
+  symbols in '..\..\symbols.pas',
+  global in '..\..\global.pas',
+  encoding in '..\..\encoding.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Title := '';
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>docma.dpr</MainSource>
@@ -73,7 +73,7 @@
         <DCC_OutputDRCFile>true</DCC_OutputDRCFile>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
-        <DCC_UsePackage>DBXSqliteDriver;RESTComponents;bindcompdbx;IndyIPCommon;DBXInterBaseDriver;vcl;IndyIPServer;vclactnband;TMSVCLUIPackPkgExDXE13;vclFireDAC;IndySystem;bindcompvclsmp;tethering;svnui;bindcompvclwinx;dsnapcon;FireDACADSDriver;madExcept_;FireDACMSAccDriver;fmxFireDAC;vclimg;madBasic_;TeeDB;FireDAC;vcltouch;vcldb;bindcompfmx;svn;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;inetdb;VirtualTreesDR;FMXTee;soaprtl;DbxCommonDriver;FmxTeeUI;ibxpress;fmx;FireDACIBDriver;fmxdae;xmlrtl;soapmidas;vcledge;fmxobj;vclwinx;ibxbindings;rtl;vclib;DbxClientDriver;Tee;madDisAsm_;TMSVCLUIPackPkgWizDXE13;CustomIPTransport;vcldsnap;dbexpress;IndyCore;TMSVCLUIPackPkgXlsDXE13;vclx;SynEditDR;bindcomp;appanalytics;dsnap;FireDACCommon;IndyIPClient;bindcompvcl;RESTBackendComponents;TeeUI;VCLRESTComponents;soapserver;dbxcds;VclSmp;adortl;TMSVCLUIPackPkgDXE13;vclie;bindengine;DBXMySQLDriver;CloudService;dsnapxml;FireDACMySQLDriver;dbrtl;IndyProtocols;inetdbxpress;FireDACCommonODBC;FireDACCommonDriver;inet;fmxase</DCC_UsePackage>
+        <DCC_UsePackage>DBXSqliteDriver;RESTComponents;bindcompdbx;IndyIPCommon;DBXInterBaseDriver;vcl;IndyIPServer;vclactnband;TMSVCLUIPackPkgExDXE13;vclFireDAC;IndySystem;bindcompvclsmp;tethering;svnui;bindcompvclwinx;dsnapcon;FireDACADSDriver;madExcept_;FireDACMSAccDriver;fmxFireDAC;vclimg;madBasic_;TeeDB;FireDAC;vcltouch;vcldb;bindcompfmx;svn;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;inetdb;VirtualTreesDR;FMXTee;soaprtl;DbxCommonDriver;FmxTeeUI;ibxpress;fmx;FireDACIBDriver;fmxdae;xmlrtl;soapmidas;vcledge;fmxobj;vclwinx;ibxbindings;rtl;vclib;DbxClientDriver;Tee;madDisAsm_;TMSVCLUIPackPkgWizDXE13;CustomIPTransport;vcldsnap;dbexpress;IndyCore;TMSVCLUIPackPkgXlsDXE13;vclx;SynEditDR;bindcomp;appanalytics;dsnap;FireDACCommon;IndyIPClient;bindcompvcl;RESTBackendComponents;TeeUI;VCLRESTComponents;soapserver;dbxcds;VclSmp;adortl;TMSVCLUIPackPkgDXE13;vclie;bindengine;DBXMySQLDriver;CloudService;dsnapxml;FireDACMySQLDriver;dbrtl;IndyProtocols;inetdbxpress;FireDACCommonODBC;FireDACCommonDriver;inet;fmxase;ComPortDrv;CEF4Delphi;JclDeveloperTools;Jcl;JclVcl;JclContainers;PowerPDFDR;CEF4Delphi_FMX</DCC_UsePackage>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -81,7 +81,7 @@
         <BRCC_OutputDir>.\tmp\res</BRCC_OutputDir>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
-        <DCC_UsePackage>DBXSqliteDriver;RESTComponents;bindcompdbx;IndyIPCommon;DBXInterBaseDriver;vcl;IndyIPServer;vclactnband;TMSVCLUIPackPkgExDXE13;vclFireDAC;IndySystem;bindcompvclsmp;tethering;bindcompvclwinx;dsnapcon;FireDACADSDriver;FireDACMSAccDriver;fmxFireDAC;vclimg;TeeDB;FireDAC;vcltouch;vcldb;bindcompfmx;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;inetdb;VirtualTreesDR;FMXTee;soaprtl;DbxCommonDriver;FmxTeeUI;ibxpress;fmx;FireDACIBDriver;fmxdae;xmlrtl;soapmidas;vcledge;fmxobj;vclwinx;ibxbindings;rtl;vclib;DbxClientDriver;Tee;CustomIPTransport;vcldsnap;dbexpress;IndyCore;TMSVCLUIPackPkgXlsDXE13;vclx;SynEditDR;bindcomp;appanalytics;dsnap;FireDACCommon;IndyIPClient;bindcompvcl;RESTBackendComponents;TeeUI;VCLRESTComponents;soapserver;dbxcds;VclSmp;adortl;TMSVCLUIPackPkgDXE13;vclie;bindengine;DBXMySQLDriver;CloudService;dsnapxml;FireDACMySQLDriver;dbrtl;IndyProtocols;inetdbxpress;FireDACCommonODBC;FireDACCommonDriver;inet;fmxase</DCC_UsePackage>
+        <DCC_UsePackage>DBXSqliteDriver;RESTComponents;bindcompdbx;IndyIPCommon;DBXInterBaseDriver;vcl;IndyIPServer;vclactnband;TMSVCLUIPackPkgExDXE13;vclFireDAC;IndySystem;bindcompvclsmp;tethering;bindcompvclwinx;dsnapcon;FireDACADSDriver;FireDACMSAccDriver;fmxFireDAC;vclimg;TeeDB;FireDAC;vcltouch;vcldb;bindcompfmx;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;inetdb;VirtualTreesDR;FMXTee;soaprtl;DbxCommonDriver;FmxTeeUI;ibxpress;fmx;FireDACIBDriver;fmxdae;xmlrtl;soapmidas;vcledge;fmxobj;vclwinx;ibxbindings;rtl;vclib;DbxClientDriver;Tee;CustomIPTransport;vcldsnap;dbexpress;IndyCore;TMSVCLUIPackPkgXlsDXE13;vclx;SynEditDR;bindcomp;appanalytics;dsnap;FireDACCommon;IndyIPClient;bindcompvcl;RESTBackendComponents;TeeUI;VCLRESTComponents;soapserver;dbxcds;VclSmp;adortl;TMSVCLUIPackPkgDXE13;vclie;bindengine;DBXMySQLDriver;CloudService;dsnapxml;FireDACMySQLDriver;dbrtl;IndyProtocols;inetdbxpress;FireDACCommonODBC;FireDACCommonDriver;inet;fmxase;ComPortDrv;JclDeveloperTools;Jcl;JclVcl;JclContainers;PowerPDFDR;JvCore;JvWizards;JvAppFrm;JvBands;JvControls;JvManagedThreads;JvRuntimeDesign;JvStdCtrls;JvSystem;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -167,6 +167,7 @@
         <VerInfo_Private>true</VerInfo_Private>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;PrivateBuild=</VerInfo_Keys>
         <BRCC_OutputDir>.\tmp\res</BRCC_OutputDir>
+        <DCC_UnitSearchPath>G:\Projekte\docma\parser;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
@@ -189,6 +190,7 @@
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;PrivateBuild=</VerInfo_Keys>
         <BRCC_OutputDir>.\tmp\res</BRCC_OutputDir>
         <DCC_CBuilderOutput>None</DCC_CBuilderOutput>
+        <DCC_UnitSearchPath>G:\Projekte\docma\parser;G:\Projekte\docma\parser\Pascal;G:\Projekte\docma\parser\dBASE;G:\Projekte\docma\parser\Lisp;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -197,10 +199,328 @@
         <DCCReference Include="start.pas">
             <Form>Form1</Form>
         </DCCReference>
-        <DCCReference Include="parser\YaccLib.pas"/>
-        <DCCReference Include="parser\LexLib.pas"/>
-        <DCCReference Include="parser\parser.pas"/>
         <DCCReference Include="AppExceptions.pas"/>
+        <DCCReference Include="parser\LexLib.pas"/>
+        <DCCReference Include="parser\YaccLib.pas"/>
+        <DCCReference Include="parser\Scopes.pas"/>
+        <DCCReference Include="parser\Pascal\pas_parser.pas"/>
+        <DCCReference Include="parser\dBASE\dbf_parser.pas"/>
+        <DCCReference Include="parser\Lisp\lsp_parser.pas"/>
+        <DCCReference Include="parser\Lisp\stacker.pas"/>
+        <DCCReference Include="register.pas">
+            <Form>Form3</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="sqlbox.pas">
+            <Form>Form4</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="program_options.pas">
+            <Form>optionFrame</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="MyHintWindow.pas"/>
+        <RcItem Include="assets\img\dbnavcancel_200.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_2</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavdelete_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_1</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavedit_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_3</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavfirst_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_4</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavlast_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_6</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavnext_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_7</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavpost_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_8</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavprior_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_9</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbnavrefresh_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_10</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\dbsrcodbc_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_14</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\default_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_11</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\disk.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_27</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\Document-icon.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_12</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\Document-Write-icon.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_13</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\edit.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_33</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\file.bmp">
+            <ResourceType>BITMAP</ResourceType>
+            <ResourceId>Bitmap_14</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\file.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_34</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\frage.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_35</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\Germany-Flag-icon.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_15</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\redo.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_28</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tbutton_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_16</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdatasource_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_17</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdatecombobox_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_36</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdateedit_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_18</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbcombobox_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_19</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbedit_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_20</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbf_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_21</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbgrid_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_22</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbgroupbox_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_23</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbimage_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_24</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdblistbox_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_25</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbmemo_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_26</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbmysql_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_67</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavadd_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_37</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavapply_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_49</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavedit_150.bmp">
+            <ResourceType>BITMAP</ResourceType>
+            <ResourceId>Bitmap_31</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavfirst_150.bmp">
+            <ResourceType>BITMAP</ResourceType>
+            <ResourceId>Bitmap_32</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavnext_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_42</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavprev_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_68</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbsrc_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_65</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbsrcodbc_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_66</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbtext_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_38</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdrawgrid_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_39</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tedit_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_40</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tgroupbox_150.bmp">
+            <ResourceType>BITMAP</ResourceType>
+            <ResourceId>Bitmap_40</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\timage_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_41</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tlabel_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_43</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tlistbox_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_44</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tmainmenu_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_45</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tmemo_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_46</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tmouse_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_47</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tmysql_150.bmp">
+            <ResourceType>BITMAP</ResourceType>
+            <ResourceId>Bitmap_47</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tmysqlconnection_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_48</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tnavedit_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_32</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\todbc_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_31</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tpagecontrol_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_50</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tpaintbox_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_51</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tpanel_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_52</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tpopupmenu_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_53</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tprogressbar_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_54</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tradiobutton_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_55</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tradiogroup_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_56</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tshape_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_57</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tspinedit_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_58</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tsplitter_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_59</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tsqlscript_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_60</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tstatusbar_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_61</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tstringgrid_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_62</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\ttable_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_30</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\ttreeview_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_63</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\undo.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_29</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\United-States-Flag-icon.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_64</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavcancel_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_69</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavdel_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_70</ResourceId>
+        </RcItem>
+        <RcItem Include="assets\img\tdbnavlast_150.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngImage_71</ResourceId>
+        </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -223,6 +543,7 @@
                 </Source>
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Beispiele für gekapselte Komponenten für Automatisierungsserver</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\CEF4Delphi_FMX.bpl">CEF4Delphi</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
                 </Excluded_Packages>
                 <Language>
@@ -237,15 +558,33 @@
                 </RDP_Source_Files>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Release\docma.exe" Configuration="Release" Class="ProjectOutput">
+                <DeployFile LocalName="assets\img\file.bmp" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
-                        <RemoteName>docma.exe</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win32\Debug\docma.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="assets\img\dbnavfirst_150.png" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
-                        <RemoteName>docma.exe</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tmysql_150.bmp" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tspinedit_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\file.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -255,9 +594,441 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win64\Release\docma.exe" Configuration="Release" Class="ProjectOutput">
+                <DeployFile LocalName="assets\img\ttable_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tpopupmenu_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\United-States-Flag-icon.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavpost_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbtext_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdrawgrid_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdatecombobox_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavrefresh_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tradiobutton_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavlast_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tlabel_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavedit_150.bmp" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tpaintbox_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="tmp\exe\32bit\Release\docma.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>docma.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tmainmenu_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tnavedit_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tstatusbar_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tshape_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tmysqlconnection_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\frage.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavcancel_200.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tprogressbar_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\ttreeview_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tedit_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\default_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbgroupbox_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\timage_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbedit_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\edit.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavadd_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbmemo_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tpagecontrol_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\todbc_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbcombobox_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\disk.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbmysql_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\Document-icon.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Debug\docma.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>docma.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavdel_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdblistbox_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbf_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbsrcodbc_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tpanel_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbimage_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavprev_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tmemo_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tbutton_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavnext_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavprior_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\undo.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavlast_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\redo.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavapply_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbsrc_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavdelete_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdatasource_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\Germany-Flag-icon.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdateedit_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tgroupbox_150.bmp" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tlistbox_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tmouse_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tradiogroup_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\Document-Write-icon.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="tmp\exe\64bit\Release\docma.exe" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>docma.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavnext_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tsplitter_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavcancel_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbgrid_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\dbnavedit_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbsrcodbc_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tdbnavfirst_150.bmp" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tsqlscript_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="assets\img\tstringgrid_150.png" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1036,6 +1807,7 @@
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>
+            <ModelSupport>False</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>

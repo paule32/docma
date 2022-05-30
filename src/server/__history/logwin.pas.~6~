@@ -1,0 +1,75 @@
+unit logwin;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, IdBaseComponent, IdComponent, IdTCPServer, Buttons, Menus,
+  ExtCtrls, StdCtrls, ComCtrls, IdUserAccounts, IdAntiFreezeBase,
+  IdAntiFreeze, IdCustomTCPServer, IdContext;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    MainMenu1: TMainMenu;
+    File1: TMenuItem;
+    Exit1: TMenuItem;
+    IdTCPServer1: TIdTCPServer;
+    IdUserManager1: TIdUserManager;
+    IdAntiFreeze1: TIdAntiFreeze;
+    Panel1: TPanel;
+    Button1: TButton;
+    procedure Exit1Click(Sender: TObject);
+    procedure IdUserManager1AfterAuthentication(const AUsername,
+      APassword: String; AAuthenticationResult: Boolean);
+    procedure IdTCPServer1Execute(AContext: TIdContext);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  if IdTCPServer1.Active = false then
+  begin
+    IdTCPServer1.Active := true;
+    Memo1.Lines.Add('server running');
+    Button1.Caption := 'STOP';
+    Exit;
+  end;
+  IdTCPServer1.Active := false;
+  Memo1.Lines.Add('server sleep');
+  Button1.Caption := 'START';
+end;
+
+procedure TForm1.Exit1Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TForm1.IdTCPServer1Execute(AContext: TIdContext);
+begin
+//
+end;
+
+procedure TForm1.IdUserManager1AfterAuthentication(
+  const AUsername: String;
+  const APassword: String; AAuthenticationResult: Boolean);
+begin
+  if AUserName = 'paule32'  then
+  if APassword = 'test3232' then
+  begin
+    ShowMessage('Login OK');
+  end;
+end;
+
+end.

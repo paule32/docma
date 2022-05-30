@@ -6,7 +6,8 @@ uses
   SysUtils;
 
 type
-  EParserError = class(Exception);
+  ENoError      = class(Exception);
+  EParserError  = class(Exception);
 
 implementation
 

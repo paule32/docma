@@ -39,8 +39,8 @@ interface
 uses
   SysUtils, Classes;
 
-var
 
+var chr: AnsiChar;
   yyinput_text: string; { * Input buffer * }
   yyoutput: TStringList; { * Output strings * }
 
